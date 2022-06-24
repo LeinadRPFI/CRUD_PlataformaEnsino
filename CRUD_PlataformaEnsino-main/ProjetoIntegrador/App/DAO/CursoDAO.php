@@ -8,7 +8,7 @@
         {
             $dsn = "mysql:host=localhost;dbname=plataforma_ensino";
 
-            $this->connection = new PDO($dsn, 'root', 'Daniel011067#');
+            $this->connection = new PDO($dsn, 'root', '');
         }
 
         public function insert(CursoModel $model)
