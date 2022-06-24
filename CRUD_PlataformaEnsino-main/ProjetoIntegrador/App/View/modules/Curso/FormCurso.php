@@ -16,14 +16,16 @@
 
         <form method="POST" action="/curso/form/save">
 
+            <input type="hidden" value="<?= $model->id ?>" name="id">
+
             <label for="nome"> Nome do Curso: </label>
-            <input type="text" id="nome" name="nome">
+            <input type="text" id="nome" value="<?= $model->nome ?>" name="nome">
 
             <label for="descricao"> Descricao: </label>
-            <input type="text" id="descricao" name="descricao">
+            <input type="text" id="descricao" value="<?= $model->descricao ?>" name="descricao">
 
             <label for="objetivos"> Objetivos: </label>
-            <input type="text" id="objetivos" name="objetivos">
+            <input type="text" id="objetivos" value="<?= $model->objetivos ?>" name="objetivos">
 
             <button type="submit"> Criar Curso </button>
 

@@ -22,6 +22,10 @@
             CursoController::save();
         break;
 
+        case '/curso/delete':
+            CursoController::delete();
+        break;
+
         default:
             echo "Erro 404";
         break;
